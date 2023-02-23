@@ -36,7 +36,7 @@ p
 @media screen and (min-width: 1024px) {
     body
     {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
 
     }
     h1
@@ -112,4 +112,38 @@ a
 {
     font-size: 1.5rem;
 }
+}
+
+/* Lists */
+
+.list
+{
+    list-style: none;
+    padding-left: 0;
+    color: var(--colorHeadings);
+}
+
+.list--inline .list__item
+{
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.list--tick
+{
+    padding-left: 2rem;
+    list-style-image: url(/icons/tick.svg);
+}
+.list--tick .list__item
+{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item
+    {
+        padding-left: 0rem;
+    }
+
 }
