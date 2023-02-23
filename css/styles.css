@@ -147,3 +147,90 @@ a
     }
 
 }
+
+
+/* Icons */
+.icon
+{
+    width: 40px;
+    height: 40px;
+}
+.icon--primary
+{
+    fill: var(--colorPrimary);
+}
+.icon-container
+{
+    width: 60px;
+    height: 60px;
+    background: #f3f9fa;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+.button--default
+{
+    border-radius: 2rem;
+    border:0;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.button--default:hover
+{
+    scale: 105%;
+    transition: 0.3s;
+}
+.button--primary
+{
+    background: var(--colorPrimary);
+    color: #fff;
+}.button--primary:hover
+{
+    background: #3a8ffd;
+}
+.button--secondary
+{
+    background: var(--colorSecondary);
+    color: #fff;
+}.button--secondary:hover
+{
+    background: #00c8e0;
+}
+.button--accent
+{
+    background: var(--colorAccent);
+    color: #fff;
+}.button--accent:hover
+{
+    background: #fd4500 ;
+}
+.button--block
+{
+width: 100%;
+display: inline-block;
+}
+.button--outline
+{
+    background: #fff;
+    color: var(--colorHeadings);
+    border: 2px solid var(--colorHeadings);
+}
+.button--outline:hover
+{
+    background: var(--colorHeadings);
+    color:#fff;
+}
+@media screen and (min-width: 1024px) {
+    .button--default
+    {
+         font-size: 1.3rem;
+    }
+
+}
+
