@@ -78,3 +78,38 @@ a
     margin-left: 5px;
     transition: margin .5s;
 }
+
+/*  Badges */
+.badge
+{
+    border-radius: 20px;
+    padding: 0.3rem 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+.badge--primary
+{
+    background-color: var(--colorPrimary);
+    color: #fff;
+}
+.badge--secondary
+{
+    background: var(--colorSecondary);
+    color: #fff;
+}
+.badge--small
+{
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge
+{
+        font-size: 2rem;
+}
+.badge--small
+{
+    font-size: 1.5rem;
+}
+}
