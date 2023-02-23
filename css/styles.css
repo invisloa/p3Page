@@ -6,37 +6,38 @@
     --colorBodyText: #918ca4;
 }
 
+
+/* Topography */
 body
 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 h1
 {
-    font-size: 5.3rem;
+    font-size: 5rem;
 
 }
 h2
 {
-    font-size: 3.3rem;
+    font-size: 3rem;
 
 }
 h3
 {
-    font-size: 0.7rem;
-    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 p
 {
     margin-top: 0;
 }
-
-
 @media screen and (min-width: 1024px) {
     body
     {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+
     }
     h1
     {
@@ -50,6 +51,30 @@ p
     {
         font-size: 2rem;
     }
+}
 
-
+/* Links */
+a
+{
+    text-decoration: none;
+}
+.link-arrow
+{
+    color: var(--colorAccent);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.link-arrow::after
+{
+    content: "-->";
+    margin-left: 5px;
+}
+.link-arrow:hover::after
+{
+    margin-left: 15px;
+    transition: margin .5s;
+}.link-arrow:not(:hover)::after
+{
+    margin-left: 5px;
+    transition: margin .5s;
 }
