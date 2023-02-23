@@ -231,6 +231,27 @@ display: inline-block;
     {
          font-size: 1.3rem;
     }
-
 }
+
+/* Input */
+
+.input
+{
+    padding: 1rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    color: var(--colorHeadings);
+}
+
+::placeholder
+{
+    color: #cdcbd7;
+}
+
+@media screen and (min-width:1024px) {
+    .input
+    {font-size: 1.5rem;  
+}
+}
+
 
